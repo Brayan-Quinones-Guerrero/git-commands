@@ -11,7 +11,7 @@
 
 
 ## Manejo de archivos
-### `git add`
+### `git add <archivo>`
 - **Descripción:** Agrega archivos al área de preparación (staging area).
 - **Uso:**
   ```bash
@@ -23,13 +23,13 @@
     ```
 
 ### `git add .`
-- **Descripción:** Agrega todos los archivos modificados y nuevos del **directorio actual** al área de preparación.
+- **Descripción:** Agrega todos los archivos modificados y nuevos del *directorio actual* al área de preparación.
 - **Uso:**
   ```bash
   git add .
   ```
 
-### `git rm --cached`
+### `git rm --cached <archivo>`
 - **Descripción:** Elimina un archivo del área de preparación sin eliminarlo del sistema de archivos.
 - **Uso:**
   ```bash
@@ -40,7 +40,7 @@
     git rm --cached archivo.txt
     ```
 
-### `git rm --cached -f`
+### `git rm --cached -f <archivo>`
 - **Descripción:** Fuerza la eliminación de un archivo del área de preparación.
 - **Uso:**
   ```bash
@@ -51,7 +51,7 @@
     git rm --cached -f archivo.txt
     ```
   
-### `git restore`
+### `git restore <archivo>`
 - **Descripción:** Restaura un archivo al estado que tenía en el último commit, descartando cualquier cambio no confirmado.
 - **Uso:**
   ```bash
@@ -110,7 +110,7 @@
     ```
 
 ### `git commit -am`
-- **Descripción:** Añade todos los archivos **modificados** al área de preparación y los confirma con un mensaje, todo en un solo paso.
+- **Descripción:** Añade todos los archivos *modificados* al área de preparación y los confirma con un mensaje, todo en un solo paso.
 - **Uso:**
   ```bash
   git commit -am "mensaje"
@@ -136,4 +136,92 @@ por commit.
 - **Uso:**
   ```bash
   git log --oneline
+  ```
+
+## Comparación de cambios
+### `git diff <archivo>`
+- **Descipción:** Muestra las diferencias entre el archivo actual y la última versión confirmada en el repositorio.
+- **Uso:**
+  ```bash
+  git diff <archivo>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git diff archivo.txt
+    ```
+
+
+## Control de versiones
+### `git checkout <hash>`
+- **Descripción:** Cambia a una versión especificada del proyecto utilizando el hash del commit.
+- **Uso:**
+  ```bash
+  git checkout <hash>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git checkout a1b2c3d
+    ```
+  
+## Manejo de ramas
+### `git checkout -b <nombre-rama>`
+- **Descirpción:** Crea una nueva rama y cambia a ella.
+- **Uso:**
+  ```bash
+  git checkout -b <nombre-rama>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git checkout -b develop
+    ```
+
+### `git branch <nombre-rama>`
+- **Descirpción:** Crea una nueva rama sin cambiar a ella.
+- **Uso:**
+  ```bash
+  git branch <nombre-rama>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git branch develop
+    ```
+
+### `git branch -d <nombre-rama>`
+- **Descirpción:** Elimina una rama local de forma segura (si ya se ha fusionado).
+- **Uso:**
+  ```bash
+  git branch -d <nombre-rama>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git branch -d vieja-rama
+    ```
+
+### `git branch -D <nombre-rama>`
+- **Descirpción:** Fuerza la eliminación de una rama local, incluso si no ha sido fusionada.
+- **Uso:**
+  ```bash
+  git branch -D <nombre-rama>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git branch -D vieja-rama
+    ```
+
+### `git checkout <nombre-rama>`
+- **Descirpción:** Cambia de la rama actual a la rama especificada.
+- **Uso:**
+  ```bash
+  git checkout <nombre-rama>
+  ```
+  - **Ejemplo:**
+    ```bash
+    git checkout main
+    ```
+
+### `git branch`
+- **Descirpción:** Muestra la lista de ramas existentes en el repositorio, con un asterisco indicando la rama activa.
+- **Uso:**
+  ```bash
+  git branch
   ```
