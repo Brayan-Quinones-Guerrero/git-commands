@@ -13,6 +13,14 @@
   git add .
   ```
 
+## `git add -A`
+- **Descripción:** Agrega todos los cambios (archivos modificados, nuevos y eliminados) al área de preparación.
+- **Condición:** Este comando añade todos los archivos en el directorio de trabajo al área de preparación, incluyendo eliminaciones.
+- **Ejemplo de uso:**
+  ```bash
+  git add -A
+  ```
+
 ## `git rm --cached <archivo>`
 - **Descripción:** Elimina un archivo del área de preparación sin eliminarlo del sistema de archivos. El archivo permanecerá en tu directorio de trabajo, pero no será incluido en el próximo commit.
 - **Condición:** El archivo debe estar en el área de preparación.
