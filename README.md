@@ -7,54 +7,28 @@ Este repositorio contiene una documentación organizada de los comandos más uti
 Cada sección cubre un conjunto específico de comandos relacionados con una tarea en Git. A continuación, se describen brevemente las secciones incluidas:
 
 ### 1. Repository Commands
-Esta sección incluye comandos relacionados con la clonación e inicialización de repositorios:
-
-- `git clone`: Clona un repositorio remoto en tu máquina local.
-- `git init`: Inicializa un nuevo repositorio en el directorio actual.
+Esta sección cubre los comandos esenciales para la clonación e inicialización de repositorios.
 
 ### 2. File Commands
-Aquí se encuentran comandos para agregar y eliminar archivos del área de preparación (staging area):
-
-- `git add`: Añade archivos al área de preparación.
-- `git rm --cached`: Elimina un archivo del área de preparación sin eliminarlo del directorio de trabajo.
-- `git restore`: Restaura archivos al último commit.
+Aquí se incluyen los comandos relacionados con la gestión de archivos en el área de preparación (staging area).
 
 ### 3. Status Commands
-Comandos para revisar el estado del repositorio y los archivos:
-
-- `git status`: Muestra el estado de los archivos en el repositorio.
-- `git status -s`: Muestra el estado de los archivos en un formato abreviado.
+En esta sección se encuentran los comandos para revisar el estado del repositorio y los archivos.
 
 ### 4. Commit Commands
-Comandos para confirmar los cambios en el repositorio:
-
-- `git commit`: Confirma los cambios en el área de preparación con un mensaje descriptivo.
-- `git commit -am`: Añade y confirma todos los archivos modificados en un solo paso.
+Esta sección abarca los comandos utilizados para confirmar cambios en el repositorio.
 
 ### 5. History Commands
-Comandos para revisar el historial de cambios en el repositorio:
-
-- `git log`: Muestra el historial de commits.
-- `git diff`: Compara los cambios en los archivos.
+Aquí se cubren los comandos para revisar el historial de cambios y comparaciones en el repositorio.
 
 ### 6. Branch Commands
-Comandos para la gestión de ramas en el repositorio:
-
-- `git branch`: Crea, lista o elimina ramas.
-- `git checkout`: Cambia de una rama a otra o crea una nueva rama.
+Esta sección está dedicada a la gestión de ramas en el repositorio.
 
 ### 7. Conflict Resolution
-Explicación sobre cómo manejar los conflictos de fusión en Git:
-
-- Pasos para resolver conflictos manualmente.
-- Comandos útiles para gestionar conflictos.
+Explicación sobre cómo resolver los conflictos de fusión en Git.
 
 ### 8. Remote Commands
-Comandos para interactuar con repositorios remotos:
-
-- `git fetch`: Descarga cambios del repositorio remoto sin fusionarlos.
-- `git pull`: Descarga y fusiona cambios del repositorio remoto en la rama actual.
-- `git push`: Envía los commits locales al repositorio remoto.
+Comandos para interactuar con repositorios remotos.
 
 ## Contribución
 
